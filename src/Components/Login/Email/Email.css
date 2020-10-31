@@ -1,0 +1,10 @@
+.o-input-login {
+  display: flex;
+  flex-direction: column;
+}
+.o-options-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+}
