@@ -9,6 +9,9 @@ function CategoriesList() {
       <CategoryText text={"Cuidado de barba"} />
       <CategoryText text={"Tinturados"} />
       <CategoryText text={"Aplanchados"} />
+      <CategoryText text={"Depilación de cejas"} />
+      <CategoryText text={"Lavado de cabello"} />
+      <CategoryText text={"Extensiones"} />
     </div>
   );
 }
