@@ -4,17 +4,17 @@ import LightText from '../Text/LightText';
 import ContentText from '../Text/ContentText';
 import './Card.css'
 
-function Card({type, name, profesion, numStars, img}){
+function Card({type, name, profesion, numStars, image}){
     return(
         <div className="o-card-container">
             <div className="o-card-info">
-                <LightText text="Belleza"/>
-                <ContentText text="Ana Elena" colorText="BlueLight"/>
-                <ContentText text="Estilista profesional" colorText="Black"/>            
+                <LightText text={type}/>
+                <ContentText text={name} colorText={"BlueLight"}/>
+                <ContentText text={profesion} colorText={"Black"}/>            
                 <p>Estrellas</p>
             </div>
             <div className="o-card-image">
-                <CardImage image="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/imujer/6/6-preguntas-que-debes-hacerle-a-tu-estilista-antes-de-que-comience-a-trabajar-1.jpg" />
+                <CardImage image={image} />
             </div>
         </div>
     );
