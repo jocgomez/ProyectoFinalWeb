@@ -1,5 +1,5 @@
 .o-image-container {
-  width: 60%;
+  max-width: 60rem;
 }
 
 .o-image-login {

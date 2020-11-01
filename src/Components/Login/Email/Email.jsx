@@ -8,13 +8,19 @@ function EmailLogin() {
   return (
     <div className="o-email-container">
       <div className="o-input-login">
-        <Textfield label={"Email"} type={"text"} />
-        <Textfield label={"Contraseña"} type={"password"} />
+        <div className="o-input-container">
+          <Textfield label={"Email"} type={"text"} />
+        </div>
+        <div className="o-input-container">
+          <Textfield label={"Contraseña"} type={"password"} />
+        </div>
       </div>
+
       <div className="o-options-login">
         <OptionsLogin text={"Olvidé mi contraseña"} />
         <OptionsLogin text={"Regístrate"} />
       </div>
+
       <Button
         colorBackground={"Blue"}
         colorText={"White"}

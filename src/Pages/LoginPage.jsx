@@ -1,6 +1,6 @@
 import React from "react";
-import ImageLogin from "../Images/Login/ImageLogin";
-import Login from "./Login";
+import ImageLogin from "../Components/Images/Login/ImageLogin";
+import Login from "../Components/Login/Login";
 
 function LoginPage() {
   return (
