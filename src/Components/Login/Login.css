@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #F5FFFE;
 }
 .o-email-login {
   margin-top: 3rem;
