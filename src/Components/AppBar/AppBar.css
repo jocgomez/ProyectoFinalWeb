@@ -1,0 +1,6 @@
+.o-appbar {
+  background-color: #1a1446;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}

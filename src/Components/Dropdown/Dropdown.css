@@ -1,4 +1,4 @@
-.o-input-text {
+.o-dropdown {
   border: 2px solid #1a1446;
   border-radius: 0.5rem;
   height: 100%;
@@ -6,15 +6,4 @@
   padding: 0 1rem;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-}
-
-.o-input-icon-container {
-  position: relative;
-  height: 100%;
-}
-.o-icon-input {
-  position: absolute;
-  bottom: 2px;
-  left: 7px;
-  color: rgb(118, 118, 118);
 }

@@ -1,0 +1,14 @@
+.o-content-container {
+  height: 2rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.o-logo-container {
+  min-width: 10rem;
+  max-width: 10rem;
+}
