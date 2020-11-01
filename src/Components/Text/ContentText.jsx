@@ -2,7 +2,7 @@ import React from "react";
 import "./Text.css";
 
 const colors = {
-  BlueLigth: "#00D4D8",
+  BlueLight: "#00D4D8",
   Black: "#333333,",
 };
 

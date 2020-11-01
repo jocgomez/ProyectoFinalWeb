@@ -7,7 +7,7 @@ import PhoneIcon from "../../Images/Icons/Phone.png";
 const colors = {
   Blue: "#1A1446",
   White: "#FFFFFF",
-  BlueLigth: "#00D4D8",
+  BlueLight: "#00D4D8",
   Black: "#333333,",
 };
 
@@ -28,7 +28,7 @@ function GetIcon(icon) {
 }
 
 function Button({ colorBackground, colorText, text, onClick, icon }) {
-  return icon == "" ? (
+  return icon === "" ? (
     <button
       className="o-button"
       style={{
@@ -49,7 +49,7 @@ function Button({ colorBackground, colorText, text, onClick, icon }) {
           borderColor: GetColor(colorBackground),
         }}
       >
-        <img className="o-img-icon" src={GetIcon(icon)} />
+        <img className="o-img-icon" src={GetIcon(icon)} alt={`${icon} icon`}/>
       </button>
     </div>
   );
