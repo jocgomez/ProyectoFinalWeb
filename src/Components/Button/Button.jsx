@@ -40,7 +40,7 @@ function Button({ colorBackground, colorText, text, onClick, icon }) {
       {text}
     </button>
   ) : (
-    <div>
+    <div className="o-button-container">
       <button
         className="o-button"
         style={{
