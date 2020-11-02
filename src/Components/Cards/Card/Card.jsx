@@ -1,4 +1,5 @@
 import React from "react";
+import Rating from '@material-ui/lab/Rating';
 import CardImage from "../../Images/Card/Card";
 import LightText from "../../Text/LightText";
 import ContentText from "../../Text/ContentText";
@@ -11,7 +12,7 @@ function Card({ type, name, profesion, numStars, image }) {
         <LightText text={type} />
         <ContentText text={name} colorText={"BlueLight"} />
         <ContentText text={profesion} colorText={"Black"} />
-        <p>Estrellas</p>
+        <Rating name="read-only" value={numStars} readOnly />
       </div>
       <div className="o-card-image">
         <CardImage image={image} />
