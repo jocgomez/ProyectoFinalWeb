@@ -24,16 +24,13 @@ function AppBarContent() {
           }
         />
       </div>
+
       <Textfield label={"Buscar proveedor"} type={"text"} icon={"search"} />
-      <div>
-        <Dropdown name={"city"} options={cities} />
-      </div>
-      <div>
+      <div className="o-search-container">
+        <Dropdown className="o-dropdown" name={"city"} options={cities} />
         <Textfield label={"Dirección"} type={"text"} />
       </div>
-      <div>
-        <Icon>exit_to_app</Icon>
-      </div>
+      <Icon className="o-exit-icon">exit_to_app</Icon>
     </div>
   );
 }
