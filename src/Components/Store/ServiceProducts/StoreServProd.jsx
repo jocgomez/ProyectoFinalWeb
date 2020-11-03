@@ -1,5 +1,5 @@
 import React from "react";
-import ContentText from "../Text/ContentText";
+import ContentText from "../../Text/ContentText";
 import ListServProd from "./TableInfo/ListServProd";
 
 const services = [
@@ -30,9 +30,13 @@ function StoreProdServ() {
     <div>
       <div>
         <ContentText text={"Mis servicios"} colorText={"BlueLight"} />
-        <ListServProd type={"service"} elements={services} />
+        <div className="o-list-table">
+          <ListServProd type={"service"} elements={services} />
+        </div>
         <ContentText text={"Mis productos"} colorText={"BlueLight"} />
-        <ListServProd type={"product"} elements={products} />
+        <div className="o-list-table">
+          <ListServProd type={"product"} elements={products} />
+        </div>
       </div>
     </div>
   );

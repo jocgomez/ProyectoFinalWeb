@@ -1,9 +1,9 @@
 import Rating from "@material-ui/lab/Rating";
 import React from "react";
-import CardImage from "../Images/Card/Card";
-import Map from "../Map/Map";
-import ContentText from "../Text/ContentText";
-import LightText from "../Text/LightText";
+import CardImage from "../../Images/Card/Card";
+import Map from "../../Map/Map";
+import ContentText from "../../Text/ContentText";
+import LightText from "../../Text/LightText";
 import "./ProviderInfo.css";
 
 function ProviderInfo({ img, name, profesion, numStars, description, adress }) {
