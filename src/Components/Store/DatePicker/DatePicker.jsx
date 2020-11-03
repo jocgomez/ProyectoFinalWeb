@@ -1,86 +1,90 @@
-import React from 'react';
-import ContentText from '../../Text/ContentText';
-import './DatePicker.css';
+import React from "react";
+import ContentText from "../../Text/ContentText";
+import "./DatePicker.css";
 import {
-    MuiPickersUtilsProvider,
-    KeyboardTimePicker,
-    KeyboardDatePicker,
-} from '@material-ui/pickers';
+  MuiPickersUtilsProvider,
+  KeyboardTimePicker,
+  KeyboardDatePicker,
+} from "@material-ui/pickers";
 
-import DateFnsUtils from '@date-io/date-fns';
+import DateFnsUtils from "@date-io/date-fns";
 import { createMuiTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
-import Button from '../../Button/Button';
-
+import Button from "../../Button/Button";
 
 var blue = "#1A1446";
 
-const pColorPurple = '#1A1446'; //Morado principal
-const pColorPurpleLight = '#1A1446'; //Morado principal claro
-const pColorPurpleDark = '#1A1446'; //Morado principal oscuro
+const pColorPurple = "#1A1446"; //Morado principal
+const pColorPurpleLight = "#1A1446"; //Morado principal claro
+const pColorPurpleDark = "#1A1446"; //Morado principal oscuro
 
 const defaultMaterialTheme = createMuiTheme({
-    palette: {
-        primary: {
-            light: pColorPurpleLight,
-            main: pColorPurple,
-            dark: pColorPurpleDark,
-            contrastText: '#fff',
-        }
+  palette: {
+    primary: {
+      light: pColorPurpleLight,
+      main: pColorPurple,
+      dark: pColorPurpleDark,
+      contrastText: "#fff",
     },
+  },
 });
 
 function DatePicker() {
-    const [selectedDate, setSelectedDate] = React.useState(new Date('2020-11-04T21:11:54'));
+  const [selectedDate, setSelectedDate] = React.useState(
+    new Date("2020-11-04T21:11:54")
+  );
 
-    const handleDateChange = (date) => {
-        setSelectedDate(date);
-    };
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
 
+  return (
+    <div className="o-datePicker-container">
+      <ContentText text="Reserva tu cita aquí" colorText="BlueLight" />
 
-    return (
-        <div className="o-datePicker-container">
-            <ContentText text="Reserva tu cita aquí" colorText="BlueLight" />
-
-            <div className="o-pickers-container">
-                <ThemeProvider theme={defaultMaterialTheme}>
-                    <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                        <KeyboardDatePicker
-                            margin="normal"
-                            id="date-picker-dialog"
-                            label="Fecha"
-                            format="MM/dd/yyyy"
-                            value={selectedDate}
-                            onChange={handleDateChange}
-                            KeyboardButtonProps={{
-                                'aria-label': 'change date',
-                            }}
-                        />
-
-                        <KeyboardTimePicker
-                            margin="normal"
-                            id="time-picker"
-                            label="Hora"
-                            value={selectedDate}
-                            onChange={handleDateChange}
-                            KeyboardButtonProps={{
-                                'aria-label': 'change time',
-                            }}
-                        />
-                    </MuiPickersUtilsProvider>
-                </ThemeProvider>
+      <div className="o-pickers-container">
+        <ThemeProvider theme={defaultMaterialTheme}>
+          <MuiPickersUtilsProvider utils={DateFnsUtils}>
+            <div className="o-datepicker">
+              <KeyboardDatePicker
+                margin="normal"
+                id="date-picker-dialog"
+                label="Fecha"
+                format="MM/dd/yyyy"
+                value={selectedDate}
+                onChange={handleDateChange}
+                KeyboardButtonProps={{
+                  "aria-label": "change date",
+                }}
+              />
             </div>
 
-            <Button
-                colorBackground={"Blue"}
-                colorBorder={"Blue"}
-                colorText={"White"}
-                text={"COMPRAR"}
-                onClick={""}
-                icon={""}
-            />
-        </div>
-    )
+            <div className="o-datepicker">
+              <KeyboardTimePicker
+                margin="normal"
+                id="time-picker"
+                label="Hora"
+                value={selectedDate}
+                onChange={handleDateChange}
+                KeyboardButtonProps={{
+                  "aria-label": "change time",
+                }}
+              />
+            </div>
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      </div>
+
+      <Button
+        colorBackground={"Blue"}
+        colorBorder={"Blue"}
+        colorText={"White"}
+        text={"COMPRAR"}
+        onClick={""}
+        icon={""}
+      />
+    </div>
+  );
 }
 
 export default DatePicker;
