@@ -14,7 +14,7 @@ function ButtonsProfile() {
             />
 
             <Button
-                colorBackground={"background"}
+                colorBackground={"Background"}
                 colorBorder={"Blue"}
                 colorText={"Blue"}
                 text={"En el local"}

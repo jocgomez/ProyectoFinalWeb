@@ -9,7 +9,7 @@ const colors = {
   White: "#FFFFFF",
   BlueLight: "#00D4D8",
   Black: "#333333,",
-  background: "#f5fffe"
+  Background: "#f5fffe"
 };
 
 const icons = {
