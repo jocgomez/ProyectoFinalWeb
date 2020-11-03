@@ -20,8 +20,10 @@ function ProviderInfo({ img, name, profesion, numStars, description, adress }) {
       <div className="o-buissnes-info">
         <ContentText text={"¿Quién soy?"} colorText={"BlueLight"} />
         <LightText text={description} />
-        <ContentText text={adress} colorText={"Black"} />
-        <Map />
+        <div className="o-position-info">
+          <ContentText text={adress} colorText={"Black"} />
+          <Map />
+        </div>
       </div>
     </div>
   );

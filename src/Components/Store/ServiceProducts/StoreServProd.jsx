@@ -1,6 +1,8 @@
 import React from "react";
 import ContentText from "../../Text/ContentText";
 import ListServProd from "./TableInfo/ListServProd";
+import "./StoreServProd.css";
+import ButtonsProfile from "../Buttons/ButtonsProfile";
 
 const services = [
   { name: "Corte de cabello", value: 15000, quantity: 1 },
@@ -27,9 +29,12 @@ const products = [
 
 function StoreProdServ() {
   return (
-    <div>
+    <div className="o-store-prodserv">
       <div>
         <ContentText text={"Mis servicios"} colorText={"BlueLight"} />
+        <div className="o-options-buttons">
+          <ButtonsProfile />
+        </div>
         <div className="o-list-table">
           <ListServProd type={"service"} elements={services} />
         </div>

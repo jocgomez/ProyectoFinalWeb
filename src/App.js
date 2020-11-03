@@ -4,6 +4,7 @@ import Cards from "./Components/Cards/Cards";
 import Categories from "./Components/Categories/Categories";
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
+import StorePage from "./Pages/StorePage";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <LoginPage /> */}
       {/* <Categories/> */}
       {/* <AppBar /> */}
-      <HomePage />
+      {/* <HomePage /> */}
+      <StorePage />
     </div>
   );
 }

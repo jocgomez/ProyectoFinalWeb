@@ -1,13 +1,16 @@
-.o-image-container {
-    max-width: 60rem;
+.o-image-profile-container {
+  max-width: 50rem;
+  min-width: 10rem;
+  height: 15rem;
+  margin-right: 2rem;
 }
 
 .o-profile-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: stretch;
 }
 
 .o-schedule-container {
-    width: 25rem;
-    max-width: 30rem;
+  max-width: 30rem;
+  min-width: 12rem;
 }

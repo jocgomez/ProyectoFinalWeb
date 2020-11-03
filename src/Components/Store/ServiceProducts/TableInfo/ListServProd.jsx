@@ -7,7 +7,7 @@ import TableHeadProvider from "./TableHead/TableHeadProvider";
 function ListServProd({ type, elements }) {
   return (
     <TableContainer>
-      <Table>
+      <Table size="small">
         <TableHeadProvider type={type} />
         <TableBodyProvider type={type} elements={elements} />
       </Table>
