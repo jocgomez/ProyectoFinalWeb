@@ -12,7 +12,7 @@ function Profile() {
 
             <div className="o-schedule-container">
                 <Schedule />
-            </div>
+            </div>            
         </div>
     );
 }

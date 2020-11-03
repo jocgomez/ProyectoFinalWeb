@@ -9,6 +9,7 @@ const colors = {
   White: "#FFFFFF",
   BlueLight: "#00D4D8",
   Black: "#333333,",
+  background: "#f5fffe"
 };
 
 const icons = {
@@ -27,14 +28,14 @@ function GetIcon(icon) {
   return iconImg;
 }
 
-function Button({ colorBackground, colorText, text, onClick, icon }) {
+function Button({ colorBackground, colorBorder, colorText, text, onClick, icon }) {
   return icon === "" ? (
     <button
       className="o-button"
       style={{
         backgroundColor: GetColor(colorBackground),
         color: GetColor(colorText),
-        borderColor: GetColor(colorBackground),
+        borderColor: GetColor(colorBorder),
       }}
     >
       {text}
@@ -46,7 +47,7 @@ function Button({ colorBackground, colorText, text, onClick, icon }) {
         style={{
           backgroundColor: GetColor(colorBackground),
           color: GetColor(colorText),
-          borderColor: GetColor(colorBackground),
+          borderColor: GetColor(colorBorder),
         }}
       >
         <img className="o-img-icon" src={GetIcon(icon)} alt={`${icon} icon`}/>
