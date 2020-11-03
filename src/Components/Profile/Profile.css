@@ -1,0 +1,13 @@
+.o-image-container {
+    max-width: 60rem;
+}
+
+.o-profile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.o-schedule-container {
+    width: 25rem;
+    max-width: 30rem;
+}
