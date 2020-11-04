@@ -9,8 +9,10 @@ import "./StorePage.css";
 function StorePage() {
   return (
     <div>
+      {/* Se llama el appbar en la parte superior */}
       <AppBar />
       <div className="o-store-page-content">
+        {/* Información principal del proveedor, lateral izquierdo*/}
         <ProviderInfo
           img={
             "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/imujer/6/6-preguntas-que-debes-hacerle-a-tu-estilista-antes-de-que-comience-a-trabajar-1.jpg"
@@ -24,12 +26,16 @@ function StorePage() {
           adress={"Calle 12 # 34-56, Cali."}
         />
         <div className="o-store-container">
+          {/* Contenedor principal de la tienda */}
           <div>
+            {/* Perfil de la tienda, con portada y horario */}
             <Profile />
           </div>
           <div className="o-body-store-container">
+            {/* Información de productos y servicios de la tienda */}
             <StoreProdServ />
             <div className="o-reserve-store">
+              {/* Información de reserva de los productos o servicios de la tienda */}
               <DatePicker />
             </div>
           </div>

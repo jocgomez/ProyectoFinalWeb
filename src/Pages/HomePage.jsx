@@ -8,8 +8,10 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <div className="o-home-container">
+      {/* Se llama el appbar en la parte superior */}
       <AppBar />
       <div className="o-home-content-container">
+        {/* Parte inferior de la página, con la tarjeta de categorias y cards de proveedores */}
         <Categories />
         <Cards />
       </div>

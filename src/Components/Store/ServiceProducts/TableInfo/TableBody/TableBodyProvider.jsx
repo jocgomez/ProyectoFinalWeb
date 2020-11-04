@@ -6,12 +6,15 @@ import LightText from "../../../../Text/LightText";
 import "./TableBodyProvider.css";
 import Icon from "@material-ui/core/Icon";
 
+//Contenido de la tabla principal
 function TableBodyProvider({ type, elements }) {
   return (
     <TableBody>
+      {/* Se recorre el arreglo de objetos que se envia y se crean las filas */}
       {elements.map((element) => (
         <TableRow key={element.name}>
           <TableCell component="th" scope="row">
+            {/* En caso de ser un producto, se estructura una imagen */}
             {type === "product" ? (
               <div className="o-body-content">
                 <div className="o-image-product-container">

@@ -3,8 +3,10 @@ import React from "react";
 import ContentText from "../../../../Text/ContentText";
 import "./TableHeadProvider.css";
 
+//Cabecera de la tabla, recibe un tipo (Servicio, producto)
 function TableHeadProvider({ type }) {
   return (
+    //Se establecen los titulos en la cabecera de la tabla
     <TableHead>
       <TableRow>
         {type === "service" ? (

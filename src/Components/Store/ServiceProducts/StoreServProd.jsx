@@ -4,12 +4,14 @@ import ListServProd from "./TableInfo/ListServProd";
 import "./StoreServProd.css";
 import ButtonsProfile from "../Buttons/ButtonsProfile";
 
+//Se establecen los servicios que posee la tienda
 const services = [
   { name: "Corte de cabello", value: 15000, quantity: 1 },
   { name: "Tinte de cabello", value: 59000, quantity: 0 },
   { name: "Lavado de cabello", value: 9000, quantity: 1 },
 ];
 
+//Se establecen los productos que posee la tienda
 const products = [
   {
     img:
@@ -27,14 +29,18 @@ const products = [
   },
 ];
 
+//Contenido principal de los productos y servicios de la tienda
 function StoreProdServ() {
   return (
     <div className="o-store-prodserv">
       <div>
+        {/* Titulo principal de los servicios de la tienda */}
         <ContentText text={"Mis servicios"} colorText={"BlueLight"} />
         <div className="o-options-buttons">
+          {/* Botones de a domicilio o en el local */}
           <ButtonsProfile />
         </div>
+        {/* Tabla con los productos o servicios de la tienda */}
         <div className="o-list-table">
           <ListServProd type={"service"} elements={services} />
         </div>
