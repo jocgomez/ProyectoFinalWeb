@@ -18,6 +18,7 @@ const pColorPurple = "#1A1446"; //Morado principal
 const pColorPurpleLight = "#1A1446"; //Morado principal claro
 const pColorPurpleDark = "#1A1446"; //Morado principal oscuro
 
+//Cambia el color del datePicker
 const defaultMaterialTheme = createMuiTheme({
   palette: {
     primary: {
@@ -29,6 +30,7 @@ const defaultMaterialTheme = createMuiTheme({
   },
 });
 
+//Se crea el datepicker, se usa estado para actualizar la fecha y hora
 function DatePicker() {
   const [selectedDate, setSelectedDate] = React.useState(
     new Date("2020-11-04T21:11:54")
@@ -45,6 +47,7 @@ function DatePicker() {
       <div className="o-pickers-container">
         <ThemeProvider theme={defaultMaterialTheme}>
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
+            {/* Campo para desplegar calendario y seleccionar dia */}
             <div className="o-datepicker">
               <KeyboardDatePicker
                 margin="normal"
@@ -59,6 +62,7 @@ function DatePicker() {
               />
             </div>
 
+            {/* Campo para seleccionar hora  */}
             <div className="o-datepicker">
               <KeyboardTimePicker
                 margin="normal"

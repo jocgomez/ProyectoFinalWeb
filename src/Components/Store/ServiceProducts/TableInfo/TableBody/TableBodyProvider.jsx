@@ -30,6 +30,7 @@ function TableBodyProvider({ type, elements }) {
               </div>
             )}
           </TableCell>
+
           <TableCell align="center">
             <div className="o-body-content">
               <ContentText
