@@ -37,6 +37,7 @@ function Button({ colorBackground, colorBorder, colorText, text, onClick, icon }
         color: GetColor(colorText),
         borderColor: GetColor(colorBorder),
       }}
+      onClick={onClick}
     >
       {text}
     </button>

@@ -3,7 +3,7 @@ import "./ImagenLogin.css";
 
 function ImageLogin({ image, alt }) {
   return (
-    <div className="o-image-container">
+    <div className="o-image-login-container">
       <img className="o-image-login" src={image} alt={alt} />
     </div>
   );

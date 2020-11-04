@@ -5,9 +5,9 @@ import LightText from "../../Text/LightText";
 import ContentText from "../../Text/ContentText";
 import "./Card.css";
 
-function Card({ type, name, profesion, numStars, image }) {
+function Card({ type, name, profesion, numStars, image, onClick }) {
   return (
-    <div className="o-card-container">
+    <div className="o-card-container" onClick={onClick}>
       <div className="o-card-info">
         <LightText text={type} />
         <ContentText text={name} colorText={"BlueLight"} />

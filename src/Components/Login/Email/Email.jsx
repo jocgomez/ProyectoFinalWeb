@@ -3,6 +3,9 @@ import Textfield from "../../Textfield/Textfield";
 import OptionsLogin from "./Options/Options";
 import "./Email.css";
 import Button from "../../Button/Button";
+import { BrowserRouter as Router } from 'react-router-dom';
+import Route from '../../../Pages/Routes';
+import history from './../../../Pages/history';
 
 function EmailLogin() {
   return (
@@ -21,13 +24,15 @@ function EmailLogin() {
         <OptionsLogin text={"Regístrate"} />
       </div>
 
+
       <Button
         colorBackground={"Blue"}
         colorText={"White"}
         text={"Ingresar"}
-        onClick={""}
+        onClick={() => { history.push('/home') }}
         icon={""}
       />
+
     </div>
   );
 }

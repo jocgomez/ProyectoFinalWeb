@@ -13,7 +13,7 @@ function App() {
       {/* <Categories/> */}
       {/* <AppBar /> */}
       {/* <HomePage /> */}
-      <StorePage />
+      <LoginPage />
     </div>
   );
 }

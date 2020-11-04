@@ -1,11 +1,12 @@
 import React from 'react'
 import Card from './Card/Card';
-import './Cards.css'
+import './Cards.css';
+import history from './../../Pages/history';
 
 function Cards (){
     return(
         <div className="o-cards-container">            
-            <Card type={"Belleza"} name={"Ana Elena"} profesion={"Estilista profesional"} numStars={2} image={"https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/imujer/6/6-preguntas-que-debes-hacerle-a-tu-estilista-antes-de-que-comience-a-trabajar-1.jpg"} />
+            <Card type={"Belleza"} name={"Ana Elena"} profesion={"Estilista profesional"} numStars={2} image={"https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/imujer/6/6-preguntas-que-debes-hacerle-a-tu-estilista-antes-de-que-comience-a-trabajar-1.jpg"} onClick={() => { history.push('/store') }}/>
             <Card type={"Belleza"} name={"Carlos Lopez"} profesion={"Estilista profesional"} numStars={5} image={"https://www.gigantes.com/wp-content/uploads/2020/07/barberos-burbuja-nba.jpg"} />
             <Card type={"Belleza"} name={"Andres Ortiz"} profesion={"Estilista profesional"} numStars={4} image={"https://cdn.shopify.com/s/files/1/0743/6659/files/BPT9-SoyMacho-Barbero-Peluquero-Estilista.png?v=1539290267"} />
             <Card type={"Belleza"} name={"Pedro Caicedo"} profesion={"Estilista profesional"} numStars={1} image={"https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2016/06/28/14671157563665.jpg"} />
