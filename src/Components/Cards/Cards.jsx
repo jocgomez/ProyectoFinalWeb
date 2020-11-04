@@ -4,6 +4,7 @@ import './Cards.css';
 import history from './../../Pages/history';
 
 function Cards (){
+    //Conjunto de cards para la pantalla de home
     return(
         <div className="o-cards-container">            
             <Card type={"Belleza"} name={"Ana Elena"} profesion={"Estilista profesional"} numStars={2} image={"https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/imujer/6/6-preguntas-que-debes-hacerle-a-tu-estilista-antes-de-que-comience-a-trabajar-1.jpg"} onClick={() => { history.push('/store') }}/>

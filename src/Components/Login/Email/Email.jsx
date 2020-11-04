@@ -8,6 +8,7 @@ import Route from '../../../Pages/Routes';
 import history from './../../../Pages/history';
 
 function EmailLogin() {
+  //Campos de texto donde el usuario escribira el email, la contraseña y el boton de ingresar
   return (
     <div className="o-email-container">
       <div className="o-input-login">

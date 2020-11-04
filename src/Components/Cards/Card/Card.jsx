@@ -6,6 +6,7 @@ import ContentText from "../../Text/ContentText";
 import "./Card.css";
 
 function Card({ type, name, profesion, numStars, image, onClick }) {
+  //Estilo de las card mostradas en las tiendas, recibe el numero de estrellas el tipo de la tienda, el nombre del proveedor, la profesión, la calificación una imagen y un onClick
   return (
     <div className="o-card-container" onClick={onClick}>
       <div className="o-card-info">

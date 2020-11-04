@@ -3,6 +3,7 @@ import Button from "../../Button/Button";
 import "./Social.css";
 
 function SocialLogin() {
+  //Botones de redes sociales
   return (
     <div className="o-social-login-container">
       <Button

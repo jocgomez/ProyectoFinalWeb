@@ -2,6 +2,7 @@ import React from "react";
 import "./Map.css";
 
 function Map() {
+  //Sección del mapa que se muestra el la card de la tienda del proveedor
   return (
     <iframe
       className="o-map"

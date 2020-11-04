@@ -29,6 +29,7 @@ function GetIcon(icon) {
 }
 
 function Button({ colorBackground, colorBorder, colorText, text, onClick, icon }) {
+  //Este sera un boton general para la app que recibe parametros como colores, onclick y un icono y retoronara de acuerdo a si recibe un icono o no
   return icon === "" ? (
     <button
       className="o-button"

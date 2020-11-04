@@ -3,6 +3,7 @@ import CategoryText from "../../Text/CategoryText";
 import "./CategoriesList.css";
 
 function CategoriesList() {
+  //Listado de categorias que se muestran en la sección de categorias
   return (
     <div className="o-category-list-container">
       <CategoryText text={"Cortes de cabello"} />
