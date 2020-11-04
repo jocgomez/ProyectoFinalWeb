@@ -22,7 +22,7 @@ function AppBarContent() {
         <LogoAppBar
           alt={"Logo barberia horizontal"}
           img={
-            "https://image.freepik.com/free-vector/composition-set-icons-barber-shop_1416-606.jpg"
+            "https://firebasestorage.googleapis.com/v0/b/meegoapptest-98b27.appspot.com/o/logoApp.png?alt=media&token=a2396f7f-a8c4-4145-964c-b0310abab916"
           }
         />
       </div>

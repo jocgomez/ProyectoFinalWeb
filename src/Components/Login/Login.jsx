@@ -11,7 +11,7 @@ function Login() {
       <LogoLogin
         alt={"logo de la empresa"}
         image={
-          "https://image.freepik.com/vector-gratis/composicion-conjunto-iconos-peluqueria_1416-899.jpg"
+          "https://firebasestorage.googleapis.com/v0/b/meegoapptest-98b27.appspot.com/o/logo.png?alt=media&token=29d5d31e-a7cf-4b5b-832c-120464089059"
         }
       />
       <div className="o-email-login">
