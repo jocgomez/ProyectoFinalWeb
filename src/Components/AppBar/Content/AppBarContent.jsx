@@ -4,6 +4,7 @@ import Dropdown from "../../Dropdown/Dropdown";
 import LogoAppBar from "../../Images/LogoAppBar/LogoAppBar";
 import Textfield from "../../Textfield/Textfield";
 import "./AppBarContent.css";
+import history from './../../../Pages/history';
 
 const cities = [
   { city: "Cali" },
@@ -14,6 +15,7 @@ const cities = [
 ];
 
 function AppBarContent() {
+  //App bar con el logo y los campos para busqueda y cerrar sesión
   return (
     <div className="o-content-container">
       <div className="o-logo-container">
@@ -30,7 +32,7 @@ function AppBarContent() {
         <Dropdown className="o-dropdown" name={"city"} options={cities} />
         <Textfield label={"Dirección"} type={"text"} />
       </div>
-      <Icon className="o-exit-icon">exit_to_app</Icon>
+      <a onClick={() => { history.push('/') }}><Icon className="o-exit-icon">exit_to_app</Icon></a>      
     </div>
   );
 }
