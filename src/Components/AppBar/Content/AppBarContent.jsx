@@ -30,7 +30,6 @@ function AppBarContent() {
       <Textfield label={"Buscar proveedor"} type={"text"} icon={"search"} />
       <div className="o-search-container">
         <Dropdown className="o-dropdown" name={"city"} options={cities} />
-        <Textfield label={"Dirección"} type={"text"} />
       </div>
       <a onClick={() => { history.push('/') }}><Icon className="o-exit-icon">exit_to_app</Icon></a>      
     </div>

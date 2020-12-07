@@ -12,8 +12,6 @@ import { createMuiTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 import Button from "../../Button/Button";
 
-var blue = "#1A1446";
-
 const pColorPurple = "#1A1446"; //Morado principal
 const pColorPurpleLight = "#1A1446"; //Morado principal claro
 const pColorPurpleDark = "#1A1446"; //Morado principal oscuro

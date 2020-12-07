@@ -7,7 +7,7 @@ import "./TableBodyProvider.css";
 import Icon from "@material-ui/core/Icon";
 
 //Contenido de la tabla principal
-function TableBodyProvider({ type, elements }) {
+function  TableBodyProvider({ type, elements }) {
   return (
     <TableBody>
       {/* Se recorre el arreglo de objetos que se envia y se crean las filas */}
@@ -43,7 +43,7 @@ function TableBodyProvider({ type, elements }) {
             <div className="o-body-content">
               <div className="o-quantity-container">
                 <Icon className="o-quantity-icon">remove_circle_outline</Icon>
-                <LightText text={element.quantity} />
+                <LightText text={0} />
                 <Icon className="o-quantity-icon">add_circle_outline</Icon>
               </div>
             </div>
